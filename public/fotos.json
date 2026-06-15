@@ -51,9 +51,9 @@
   },
   {
     "id": 6,
-    "titulo": "Vestimenta Guanacasteca",
-    "descripcion": "El traje guanacasteco refleja la identidad de la provincia declarada patrimonio cultural.",
-    "categoria": "trajes",
+    "titulo": "La Pampa Guanacasteca",
+    "descripcion": "Extensas llanuras características de la región chorotega. Este paisaje es el corazón de la cultura sabanera, la ganadería y el folclor vibrante que se respira en cantones como Liberia.",
+    "categoria": "lugares",
     "imagen": "/img/pampa-guanacaste.jpg",
     "licencia": "CC BY-SA 3.0",
     "fuente": "Wikimedia Commons",
