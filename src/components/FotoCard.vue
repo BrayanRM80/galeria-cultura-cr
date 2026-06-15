@@ -50,18 +50,21 @@ const estiloFiltro = computed(() => {
 
 <style scoped>
 .foto-card {
-  background: #16213e;
-  border-radius: 10px;
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .foto-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(192, 57, 43, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  border-color: #c0392b;
 }
 
 .foto-imagen-wrapper {
@@ -76,26 +79,33 @@ const estiloFiltro = computed(() => {
   height: 100%;
   object-fit: cover;
   transition:
-    transform 0.3s ease,
+    transform 0.35s ease,
     filter 0.3s ease;
 }
 
 .foto-card:hover .foto-imagen {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
 .foto-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(192, 57, 43, 0.6);
+  background: linear-gradient(to top, rgba(192, 57, 43, 0.85) 0%, transparent 60%);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.75rem;
   opacity: 0;
-  transition: opacity 0.2s ease;
-  font-size: 1.2rem;
-  color: white;
-  font-weight: bold;
+  transition: opacity 0.25s ease;
+}
+
+.foto-overlay span {
+  background: white;
+  color: #c0392b;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .foto-card:hover .foto-overlay {
@@ -103,16 +113,24 @@ const estiloFiltro = computed(() => {
 }
 
 .foto-info {
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid #21262d;
 }
+
 .foto-info h3 {
-  font-size: 0.95rem;
-  color: #eee;
-  margin-bottom: 0.3rem;
+  font-size: 0.92rem;
+  color: #e6edf3;
+  margin-bottom: 0.35rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .foto-categoria {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: #c0392b;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 </style>
