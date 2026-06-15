@@ -5,6 +5,8 @@
       <p>Galería fotográfica interactiva</p>
     </header>
 
+    <AudioPlayer />
+
     <main>
       <!-- Filtros de categoría -->
       <div class="filtros">
@@ -57,6 +59,7 @@ import { ref, computed, onMounted } from 'vue'
 import FotoCard from './components/FotoCard.vue'
 import LightboxModal from './components/LightboxModal.vue'
 import FiltrosVisuales from './components/FiltrosVisuales.vue'
+import AudioPlayer from './components/AudioPlayer.vue'
 
 const fotos = ref([])
 const cargando = ref(true)
