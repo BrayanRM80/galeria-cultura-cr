@@ -4,107 +4,119 @@
     "titulo": "Gallo Pinto",
     "descripcion": "Plato nacional de Costa Rica, mezcla de arroz y frijoles negros. Infaltable en el desayuno costarricense.",
     "categoria": "comidas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Gallo_pinto_CR.jpg/640px-Gallo_pinto_CR.jpg",
-    "licencia": "CC BY-SA 3.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/gallo-pinto.jpg",
+    "licencia": "CC BY 2.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "James Diggans"
   },
   {
     "id": 2,
     "titulo": "Casado",
     "descripcion": "Almuerzo típico costarricense con arroz, frijoles, ensalada, plátano maduro y carne.",
     "categoria": "comidas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Casado_Costa_Rica.jpg/640px-Casado_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 3.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/casado.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Arjuno3"
   },
   {
     "id": 3,
     "titulo": "Tamales Costarricenses",
     "descripcion": "Tradicionales tamales navideños envueltos en hoja de plátano, rellenos de masa, arroz y carnes.",
     "categoria": "comidas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tamale_Costa_Rica.jpg/640px-Tamale_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 4.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/tamales.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "NachoB71"
   },
   {
     "id": 4,
-    "titulo": "Traje Típico de la Provincia de San José",
+    "titulo": "Traje Típico Costarricense",
     "descripcion": "Vestimenta tradicional costarricense usada en fiestas patrias y actividades folclóricas.",
     "categoria": "trajes",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Traje_tipico_Costa_Rica.jpg/480px-Traje_tipico_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 3.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/traje-tipico.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Simon King"
   },
   {
     "id": 5,
-    "titulo": "Baile Folclórico con Traje Típico",
-    "descripcion": "Grupos folclóricos costarricenses presentan el traje típico en festivales nacionales e internacionales.",
+    "titulo": "Baile Folclórico",
+    "descripcion": "Grupos folclóricos costarricenses presentan el traje típico en festivales nacionales.",
     "categoria": "trajes",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Costa_Rica_Folkloric_Dance.jpg/640px-Costa_Rica_Folkloric_Dance.jpg",
-    "licencia": "CC BY 2.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/baile-folklorico.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Rodtico21"
   },
   {
     "id": 6,
-    "titulo": "Vestimenta Tradicional Guanacasteca",
-    "descripcion": "El traje guanacasteco refleja la identidad de la provincia declarada patrimonio cultural de Costa Rica.",
+    "titulo": "Vestimenta Guanacasteca",
+    "descripcion": "El traje guanacasteco refleja la identidad de la provincia declarada patrimonio cultural.",
     "categoria": "trajes",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Guanacaste_dance_Costa_Rica.jpg/480px-Guanacaste_dance_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 2.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/pampa-guanacaste.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Pokey (Alan H M)"
   },
   {
     "id": 7,
     "titulo": "Carreta Típica Costarricense",
-    "descripcion": "La carreta es el símbolo nacional de Costa Rica. Su decoración colorida es Patrimonio Cultural Inmaterial de la Humanidad según la UNESCO.",
+    "descripcion": "La carreta es el símbolo nacional. Su decoración es Patrimonio Cultural Inmaterial de la Humanidad según la UNESCO.",
     "categoria": "artesanias",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Oxcart_Costa_Rica.jpg/640px-Oxcart_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 3.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/carreta.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Julian Monge-Najera"
   },
   {
     "id": 8,
     "titulo": "Esferas de Piedra",
-    "descripcion": "Las esferas de piedra precolombinas son uno de los íconos arqueológicos más importantes de Costa Rica.",
+    "descripcion": "Las esferas precolombinas son uno de los íconos arqueológicos más importantes de Costa Rica.",
     "categoria": "artesanias",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stone_spheres_of_Costa_Rica.jpg/640px-Stone_spheres_of_Costa_Rica.jpg",
+    "imagen": "/img/esferas.jpg",
     "licencia": "CC BY-SA 3.0",
-    "fuente": "Wikimedia Commons"
+    "fuente": "Wikimedia Commons",
+    "autor": "Rodtico21"
   },
   {
     "id": 9,
     "titulo": "Cerámica Chorotega",
-    "descripcion": "La alfarería Chorotega de Guanacaste es una tradición ancestral que se mantiene viva en comunidades como Guaitil.",
+    "descripcion": "La alfarería Chorotega de Guanacaste es una tradición ancestral viva en comunidades como Guaitil.",
     "categoria": "artesanias",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Chorotega_pottery.jpg/480px-Chorotega_pottery.jpg",
-    "licencia": "CC BY-SA 2.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/ceramica.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Rodtico21"
   },
   {
     "id": 10,
     "titulo": "Fiestas de Palmares",
     "descripcion": "Las Fiestas de Palmares son uno de los eventos populares más grandes de Costa Rica, celebradas cada enero.",
     "categoria": "fiestas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fiestas_Palmares_Costa_Rica.jpg/640px-Fiestas_Palmares_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 3.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/palmares.jpg",
+    "licencia": "Dominio Público",
+    "fuente": "Wikimedia Commons",
+    "autor": "Shareban"
   },
   {
     "id": 11,
     "titulo": "Día de la Independencia",
-    "descripcion": "El 15 de setiembre Costa Rica celebra su independencia con desfiles de faroles, bandas y actos cívicos en todo el país.",
+    "descripcion": "El 15 de setiembre Costa Rica celebra su independencia con desfiles de faroles y actos cívicos.",
     "categoria": "fiestas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Costa_Rica_Independence_Day.jpg/640px-Costa_Rica_Independence_Day.jpg",
-    "licencia": "CC BY 2.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/independencia.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Antonio Bermejo Del..."
   },
   {
     "id": 12,
     "titulo": "Tope Nacional",
-    "descripcion": "El Tope Nacional del 26 de diciembre reúne miles de jinetes en el Paseo Colón de San José, siendo una de las tradiciones más queridas del país.",
+    "descripcion": "El Tope Nacional del 26 de diciembre reúne miles de jinetes en el Paseo Colón de San José.",
     "categoria": "fiestas",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tope_Nacional_Costa_Rica.jpg/640px-Tope_Nacional_Costa_Rica.jpg",
-    "licencia": "CC BY-SA 2.0",
-    "fuente": "Wikimedia Commons"
+    "imagen": "/img/tope.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Guti1978"
   }
 ]

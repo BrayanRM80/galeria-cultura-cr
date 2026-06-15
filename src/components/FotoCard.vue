@@ -1,10 +1,14 @@
 <template>
   <div class="foto-card" @click="$emit('seleccionar', foto)">
     <div class="foto-imagen-wrapper">
-      <img :src="foto.imagen" :alt="foto.titulo" class="foto-imagen" loading="lazy" />
-      <div class="foto-overlay">
-        <span>🔍 Ver</span>
-      </div>
+      <img
+        :src="foto.imagen"
+        :alt="foto.titulo"
+        class="foto-imagen"
+        :style="estiloFiltro"
+        loading="lazy"
+      />
+      <div class="foto-overlay"><span>🔍 Ver</span></div>
     </div>
     <div class="foto-info">
       <h3>{{ foto.titulo }}</h3>
@@ -14,11 +18,11 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
-  foto: {
-    type: Object,
-    required: true,
-  },
+  foto: { type: Object, required: true },
+  filtroVisual: { type: String, default: 'ninguno' },
 })
 
 defineEmits(['seleccionar'])
@@ -31,6 +35,17 @@ const categoriasLabels = {
 }
 
 const categoriaLabel = categoriasLabels[props.foto.categoria] ?? props.foto.categoria
+
+const estiloFiltro = computed(() => {
+  const filtros = {
+    ninguno: 'none',
+    grayscale: 'grayscale(100%)',
+    sepia: 'sepia(100%)',
+    contraste: 'contrast(180%)',
+    saturacion: 'saturate(300%)',
+  }
+  return { filter: filtros[props.filtroVisual] ?? 'none' }
+})
 </script>
 
 <style scoped>
@@ -60,7 +75,9 @@ const categoriaLabel = categoriasLabels[props.foto.categoria] ?? props.foto.cate
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .foto-card:hover .foto-imagen {
@@ -88,13 +105,11 @@ const categoriaLabel = categoriasLabels[props.foto.categoria] ?? props.foto.cate
 .foto-info {
   padding: 0.75rem 1rem;
 }
-
 .foto-info h3 {
   font-size: 0.95rem;
   color: #eee;
   margin-bottom: 0.3rem;
 }
-
 .foto-categoria {
   font-size: 0.75rem;
   color: #c0392b;

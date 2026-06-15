@@ -18,26 +18,33 @@
         </button>
       </div>
 
-      <!-- Estado de carga -->
-      <div v-if="cargando" class="estado-carga">
-        <p>Cargando galería...</p>
-      </div>
+      <!-- Filtros visuales CSS -->
+      <FiltrosVisuales :filtroActivo="filtroVisual" @cambiar="filtroVisual = $event" />
 
       <!-- Grilla de fotos -->
+      <div v-if="cargando" class="estado-carga"><p>Cargando galería...</p></div>
+
       <div v-else class="galeria-grid">
         <FotoCard
           v-for="foto in fotosFiltradas"
           :key="foto.id"
           :foto="foto"
+          :filtroVisual="filtroVisual"
           @seleccionar="abrirLightbox"
         />
       </div>
 
-      <!-- Mensaje si no hay fotos -->
       <div v-if="!cargando && fotosFiltradas.length === 0" class="sin-resultados">
         <p>No hay fotos en esta categoría.</p>
       </div>
     </main>
+
+    <!-- Lightbox -->
+    <LightboxModal
+      v-if="fotoSeleccionada"
+      :foto="fotoSeleccionada"
+      @cerrar="fotoSeleccionada = null"
+    />
 
     <footer class="site-footer">
       <p>IF7102 Multimedios · UCR Sede Guanacaste · 2026</p>
@@ -48,13 +55,15 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import FotoCard from './components/FotoCard.vue'
+import LightboxModal from './components/LightboxModal.vue'
+import FiltrosVisuales from './components/FiltrosVisuales.vue'
 
-// Estado reactivo
 const fotos = ref([])
 const cargando = ref(true)
 const categoriaActiva = ref('todas')
+const filtroVisual = ref('ninguno')
+const fotoSeleccionada = ref(null)
 
-// Categorías para los botones de filtro
 const categorias = [
   { valor: 'todas', label: '🌟 Todas' },
   { valor: 'comidas', label: '🍽️ Comidas Típicas' },
@@ -63,13 +72,11 @@ const categorias = [
   { valor: 'fiestas', label: '🎉 Fiestas y Tradiciones' },
 ]
 
-// Computed: filtra fotos según categoría activa
 const fotosFiltradas = computed(() => {
   if (categoriaActiva.value === 'todas') return fotos.value
   return fotos.value.filter((f) => f.categoria === categoriaActiva.value)
 })
 
-// Cargar JSON con fetch al montar el componente
 onMounted(async () => {
   try {
     const respuesta = await fetch('/fotos.json')
@@ -81,9 +88,8 @@ onMounted(async () => {
   }
 })
 
-// Lightbox (se implementa en Commit 4)
 function abrirLightbox(foto) {
-  console.log('Foto seleccionada:', foto.titulo)
+  fotoSeleccionada.value = foto
 }
 </script>
 
@@ -110,19 +116,17 @@ body {
   font-size: 2rem;
   color: white;
 }
-
 .site-header p {
   color: #f5c6c6;
   margin-top: 0.5rem;
 }
 
-/* Filtros */
 .filtros {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 0.75rem;
 }
 
 .btn-filtro {
@@ -140,14 +144,12 @@ body {
   background: #c0392b;
   color: white;
 }
-
 .btn-filtro.activo {
   background: #c0392b;
   color: white;
   font-weight: bold;
 }
 
-/* Grilla */
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -170,21 +172,14 @@ body {
   font-size: 0.85rem;
 }
 
-/* Responsivo */
 @media (max-width: 600px) {
   .site-header h1 {
     font-size: 1.4rem;
   }
-
   .galeria-grid {
     grid-template-columns: 1fr 1fr;
     padding: 0 0.75rem 2rem;
     gap: 0.75rem;
-  }
-
-  .btn-filtro {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
   }
 }
 </style>
