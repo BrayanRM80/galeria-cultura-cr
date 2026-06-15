@@ -19,7 +19,7 @@
     </select>
 
     <audio ref="audioRef" loop @ended="reproduciendo = false">
-      <source :src="pistaActiva" type="audio/mpeg" />
+      <source :src="pistaActiva" type="audio/wav" />
     </audio>
   </div>
 </template>
@@ -30,11 +30,11 @@ import { ref, watch, onUnmounted } from 'vue'
 const audioRef = ref(null)
 const reproduciendo = ref(false)
 const volumen = ref(0.5)
-const pistaActiva = ref('public /audio/ambiente-cr.mp3')
+const pistaActiva = ref('/audio/ambiente-cr.wav')
 
 const pistas = [
-  { archivo: 'public/audio/ambiente-cr.mp3', label: '🌿 Naturaleza tropical' },
-  { archivo: 'public/audio/marimba.mp3', label: '🎶 Marimba costarricense' },
+  { archivo: '/audio/ambiente-cr.wav', label: '🌿 Naturaleza tropical' },
+  { archivo: '/audio/marimba.wav', label: '🎶 Marimba costarricense' },
 ]
 
 function togglePlay() {
