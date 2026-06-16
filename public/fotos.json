@@ -42,7 +42,7 @@
   {
     "id": 5,
     "titulo": "Baile Folclórico",
-    "descripcion": "Grupos folclóricos costarricenses presentan el traje típico en festivales nacionales.",
+    "descripcion": "Grupos folclóricos costarricenses presentan el traje típico en festivals nacionales.",
     "categoria": "trajes",
     "imagen": "/img/baile-folklorico.jpg",
     "licencia": "CC BY-SA 4.0",
@@ -118,5 +118,155 @@
     "licencia": "CC BY-SA 3.0",
     "fuente": "Wikimedia Commons",
     "autor": "Guti1978"
+  },
+  {
+    "id": 13,
+    "titulo": "Playa Cabuyal",
+    "descripcion": "Fotografía original de paisaje natural que captura las aguas tranquilas y la belleza virgen de Playa Cabuyal en la costa de Guanacaste.",
+    "categoria": "lugares",
+    "imagen": "/img/Cabuyal_Guanacaste.jpg",
+    "licencia": "Fotografía Propia (CC BY 4.0)",
+    "fuente": "Autoría propia",
+    "autor": "Brayan Reyes Mendoza"
+  },
+  {
+    "id": 14,
+    "titulo": "Isla del Coco",
+    "descripcion": "Paisaje natural del Parque Nacional Isla del Coco en el Océano Pacífico, un santuario mundial de biodiversidad.",
+    "categoria": "lugares",
+    "imagen": "/img/Isla del Coco, en el Océano Pacífico.jpg",
+    "licencia": "Dominio Público",
+    "fuente": "Wikimedia Commons",
+    "autor": "Ministerio de Ambiente y Energía"
+  },
+  {
+    "id": 15,
+    "titulo": "Bahía Wafer",
+    "descripcion": "Vista escénica de Bahía Wafer en la Isla del Coco, un punto histórico y natural clave del Pacífico costarricense.",
+    "categoria": "lugares",
+    "imagen": "/img/Bahía Waffer. Isla del Coco..jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Colaborador de Wikimedia Commons"
+  },
+  {
+    "id": 16,
+    "titulo": "Teatro Nacional",
+    "descripcion": "Fachada principal del Teatro Nacional de Costa Rica en San José, inaugurado en 1897 y considerado una joya arquitectónica.",
+    "categoria": "lugares",
+    "imagen": "/img/Teatro Nacional_San José..jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Mariordo (Mario Roberto Durán Ortiz)"
+  },
+  {
+    "id": 17,
+    "titulo": "Museo Nacional",
+    "descripcion": "Vista frontal del Museo Nacional de Costa Rica en San José, resguardando el patrimonio histórico y arqueológico del país.",
+    "categoria": "lugares",
+    "imagen": "/img/Museo Nacional_San José.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Rayner09 mar"
+  },
+  {
+    "id": 18,
+    "titulo": "Volcán Poás",
+    "descripcion": "Impresionante vista del cráter principal activo del Volcán Poás en Alajuela, rodeado de vegetación de altura.",
+    "categoria": "lugares",
+    "imagen": "/img/volcán Poás_Alajuela.jpg",
+    "licencia": "Dominio Público",
+    "fuente": "Wikimedia Commons",
+    "autor": "Embajada de los EE. UU. en Costa Rica"
+  },
+  {
+    "id": 19,
+    "titulo": "La Fortuna",
+    "descripcion": "La majestuosa Catarata La Fortuna en Alajuela, una impresionante caída de agua en las faldas del Volcán Arenal.",
+    "categoria": "lugares",
+    "imagen": "/img/La Fortuna_Alajuela.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Passengerpigeon"
+  },
+  {
+    "id": 20,
+    "titulo": "Pejivalle",
+    "descripcion": "Paisaje natural e hídrico de la zona de Pejivalle en Cartago, un rincón de gran valor ecoturístico.",
+    "categoria": "lugares",
+    "imagen": "/img/Pejivalle_Cartago.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Mongeajera"
+  },
+  {
+    "id": 21,
+    "titulo": "Basílica de los Ángeles",
+    "descripcion": "Santuario de la Basílica de Nuestra Señora de los Ángeles en Cartago, epicentro cultural y religioso de Costa Rica.",
+    "categoria": "lugares",
+    "imagen": "/img/Basilica_Cartago.jpg",
+    "licencia": "Creative Commons Zero (CC0)",
+    "fuente": "Wikimedia Commons",
+    "autor": "Bernard Gagnon"
+  },
+  {
+    "id": 22,
+    "titulo": "San Isidro de Heredia",
+    "descripcion": "Entorno natural y montañoso del cantón de San Isidro en la provincia de Heredia.",
+    "categoria": "lugares",
+    "imagen": "/img/Heredia_San Isidro.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "miguel montero"
+  },
+  {
+    "id": 23,
+    "titulo": "La Tirimbina",
+    "descripcion": "Entorno de selva tropical y conservación en la Reserva Biológica La Tirimbina, Sarapiquí de Heredia.",
+    "categoria": "lugares",
+    "imagen": "/img/La Tirimbina_Sarapiqui_Heredia.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Julian Monge-Najera"
+  },
+  {
+    "id": 24,
+    "titulo": "Miramar",
+    "descripcion": "Paisaje escénico y rural de las montañas de Miramar en la provincia de Puntarenas.",
+    "categoria": "lugares",
+    "imagen": "/img/Miramar_Puntarenas.jpg",
+    "licencia": "CC BY-SA 3.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Mongeajera"
+  },
+  {
+    "id": 25,
+    "titulo": "Río Sierpe",
+    "descripcion": "Vista natural del Río Sierpe en la provincia de Puntarenas, canal de acceso al sistema de manglares más grande del país.",
+    "categoria": "lugares",
+    "imagen": "/img/Sierpe_River_Puntarenas.jpg",
+    "licencia": "Creative Commons Zero (CC0)",
+    "fuente": "Wikimedia Commons",
+    "autor": "Bernard Gagnon"
+  },
+  {
+    "id": 26,
+    "titulo": "Muelle de Limón",
+    "descripcion": "Pintoresca vista costera y muelle de botes en la provincia de Limón, reflejando el Caribe costarricense.",
+    "categoria": "lugares",
+    "imagen": "/img/muelle_para_botes_en_Limón.jpg",
+    "licencia": "CC BY-SA 2.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Leonora (Ellie) Enking"
+  },
+  {
+    "id": 27,
+    "titulo": "Veragua Rainforest",
+    "descripcion": "Sendero natural y denso bosque tropical lluvioso en Veragua Rainforest, Limón.",
+    "categoria": "lugares",
+    "imagen": "/img/Limón_VeraguaRainforest.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "fuente": "Wikimedia Commons",
+    "autor": "Dr. Thomas Liptak"
   }
 ]
