@@ -61,10 +61,31 @@ const estiloFiltro = computed(() => {
     border-color 0.2s ease;
 }
 
+.foto-card {
+  position: relative;
+}
+
+.foto-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #002b7f 33%, #ffffff 33% 66%, #ce1126 66%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 2;
+}
+
+.foto-card:hover::before {
+  opacity: 1;
+}
+
 .foto-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-  border-color: #c0392b;
+  border-color: #002b7f;
 }
 
 .foto-imagen-wrapper {

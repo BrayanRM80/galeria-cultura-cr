@@ -10,6 +10,8 @@
       </div>
     </header>
 
+    <div class="franja-tricolor"></div>
+
     <AudioPlayer />
 
     <main>
@@ -125,7 +127,6 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
 .site-header {
   background: linear-gradient(135deg, #c0392b 0%, #922b21 60%, #7b241c 100%);
   padding: 2rem 1.5rem;
@@ -161,7 +162,6 @@ body {
   text-transform: uppercase;
 }
 
-/* CONTROLES */
 .controles {
   background: #161b22;
   border-bottom: 1px solid #30363d;
@@ -206,11 +206,11 @@ body {
 }
 
 .btn-filtro.activo {
-  background: #c0392b;
-  border-color: #c0392b;
+  background: linear-gradient(135deg, #002b7f 0%, #ce1126 100%);
+  border-color: transparent;
   color: white;
   font-weight: 600;
-  box-shadow: 0 0 12px rgba(192, 57, 43, 0.4);
+  box-shadow: 0 0 14px rgba(206, 17, 38, 0.4);
 }
 
 .contador {
@@ -266,6 +266,17 @@ body {
   font-size: 0.82rem;
   border-top: 1px solid #21262d;
   letter-spacing: 0.5px;
+}
+
+.franja-tricolor {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #002b7f 0% 33.33%,
+    #ffffff 33.33% 66.66%,
+    #ce1126 66.66% 100%
+  );
 }
 
 @media (max-width: 600px) {
