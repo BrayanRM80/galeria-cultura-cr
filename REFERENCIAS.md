@@ -66,15 +66,15 @@ Todas las imágenes de contenido específico y patrimonio costarricense fueron o
 
 Las pistas de audio ambiental y música folclórica fueron obtenidas de **Freesound** (https://freesound.org).
 
-- **Pista ambiente:** `ambiente-cr.mp3.wav`
+- **Pista ambiente:** `ambiente-cr.wav`
   - **Título original:** Cicadas chirping in the jungle
   - **Autor:** zachrau
   - **Licencia:** Creative Commons 0 (CC0 1.0) — Dominio Público
   - **Enlace:** https://freesound.org/people/zachrau/sounds/812939/
-- **Pista de marimba:** `marimba.mp3.wav`
+- **Pista de marimba:** `marimba.wav`
   - **Título original:** Cancion con marimba El Torito Pinto El Salvador
   - **Autor:** _Remezcla TuCiudad_
-  - **Licencia:** Creative Commons Attribution 4.0 (CC BY 4.0) — Requiere Atribución
+  - **Licencia:** Creative Commons Attribution 4.0 (CC BY 4.0) — Atribución documentada en la interfaz del reproductor de la aplicación.
   - **Enlace:** https://freesound.org/people/_Remezcla%20TuCiudad_/sounds/830529/
 
 ---
