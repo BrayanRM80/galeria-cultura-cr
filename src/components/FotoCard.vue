@@ -28,10 +28,10 @@ const props = defineProps({
 defineEmits(['seleccionar'])
 
 const categoriasLabels = {
-  comidas: '🍽️ Comidas Típicas',
-  trajes: '👗 Trajes Típicos',
-  artesanias: '🏺 Artesanías',
-  fiestas: '🎉 Fiestas y Tradiciones',
+  comidas: ' Comidas Típicas',
+  trajes: ' Trajes Típicos',
+  artesanias: ' Artesanías',
+  fiestas: ' Fiestas y Tradiciones',
 }
 
 const categoriaLabel = categoriasLabels[props.foto.categoria] ?? props.foto.categoria

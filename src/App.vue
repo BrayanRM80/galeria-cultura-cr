@@ -16,7 +16,7 @@
       <section class="controles">
         <!-- Filtros de categoría -->
         <div class="filtros-wrapper">
-          <p class="filtros-titulo">📂 Categoría</p>
+          <p class="filtros-titulo">Categoría</p>
           <div class="filtros">
             <button
               v-for="cat in categorias"
@@ -29,16 +29,13 @@
           </div>
         </div>
 
-        <!-- Filtros visuales CSS -->
         <FiltrosVisuales :filtroActivo="filtroVisual" @cambiar="filtroVisual = $event" />
       </section>
 
-      <!-- Contador de resultados -->
       <div class="contador">
         <span>{{ fotosFiltradas.length }} foto{{ fotosFiltradas.length !== 1 ? 's' : '' }}</span>
       </div>
 
-      <!-- Grilla de fotos -->
       <div v-if="cargando" class="estado-carga">
         <div class="spinner"></div>
         <p>Cargando galería...</p>
@@ -55,7 +52,7 @@
       </div>
 
       <div v-if="!cargando && fotosFiltradas.length === 0" class="sin-resultados">
-        <p>😕 No hay fotos en esta categoría.</p>
+        <p>No hay fotos en esta categoría.</p>
       </div>
     </main>
 
@@ -84,16 +81,13 @@ const categoriaActiva = ref('todas')
 const filtroVisual = ref('ninguno')
 const fotoSeleccionada = ref(null)
 
-// ✅ PARA AGREGAR UNA CATEGORÍA NUEVA:
-// 1. Añadí un objeto aquí abajo con { valor: 'nombre', label: '🔸 Etiqueta' }
-// 2. En fotos.json usá ese mismo "valor" en el campo "categoria" de cada foto
 const categorias = [
-  { valor: 'todas', label: '🌟 Todas' },
-  { valor: 'comidas', label: '🍽️ Comidas' },
-  { valor: 'trajes', label: '👗 Trajes' },
-  { valor: 'artesanias', label: '🏺 Artesanías' },
-  { valor: 'fiestas', label: '🎉 Fiestas' },
-  { valor: 'lugares', label: '📍 Lugares' }, // ← nueva categoría
+  { valor: 'todas', label: ' Todas' },
+  { valor: 'comidas', label: ' Comidas' },
+  { valor: 'trajes', label: ' Trajes' },
+  { valor: 'artesanias', label: ' Artesanías' },
+  { valor: 'fiestas', label: ' Fiestas' },
+  { valor: 'lugares', label: ' Lugares' },
 ]
 
 const fotosFiltradas = computed(() => {
@@ -219,7 +213,6 @@ body {
   box-shadow: 0 0 12px rgba(192, 57, 43, 0.4);
 }
 
-/* CONTADOR */
 .contador {
   text-align: right;
   padding: 0.6rem 1.75rem 0;
@@ -227,7 +220,6 @@ body {
   color: #6e7681;
 }
 
-/* GRILLA */
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -235,7 +227,6 @@ body {
   padding: 1rem 1.5rem 3rem;
 }
 
-/* SPINNER */
 .estado-carga {
   display: flex;
   flex-direction: column;
@@ -267,7 +258,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* FOOTER */
 .site-footer {
   text-align: center;
   padding: 1.25rem;
@@ -278,7 +268,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* RESPONSIVO */
 @media (max-width: 600px) {
   .site-header h1 {
     font-size: 1.3rem;

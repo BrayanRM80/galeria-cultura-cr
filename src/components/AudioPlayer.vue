@@ -1,9 +1,9 @@
 <template>
   <div class="audio-player">
-    <span class="audio-label">🎵 Ambiente sonoro</span>
+    <span class="audio-label"> Ambiente sonoro</span>
 
     <button class="btn-play" @click="togglePlay">
-      {{ reproduciendo ? '⏸️ Pausar' : '▶️ Reproducir' }}
+      {{ reproduciendo ? '⏸ Pausar' : '▶ Reproducir' }}
     </button>
 
     <div class="control-volumen">
@@ -18,9 +18,7 @@
       </option>
     </select>
 
-    <audio ref="audioRef" loop @ended="reproduciendo = false">
-      <source :src="pistaActiva" type="audio/wav" />
-    </audio>
+    <audio ref="audioRef" :src="pistaActiva" loop @ended="reproduciendo = false"></audio>
   </div>
 </template>
 
@@ -33,8 +31,8 @@ const volumen = ref(0.5)
 const pistaActiva = ref('/audio/ambiente-cr.wav')
 
 const pistas = [
-  { archivo: '/audio/ambiente-cr.wav', label: '🌿 Naturaleza tropical' },
-  { archivo: '/audio/marimba.wav', label: '🎶 Marimba costarricense' },
+  { archivo: '/audio/ambiente-cr.wav', label: ' Naturaleza tropical' },
+  { archivo: '/audio/marimba.wav', label: ' Marimba costarricense' },
 ]
 
 function togglePlay() {
@@ -54,13 +52,17 @@ function cambiarVolumen(e) {
 }
 
 function cambiarPista(e) {
-  const audio = audioRef.value
   pistaActiva.value = e.target.value
-  reproduciendo.value = false
-  if (audio) {
-    audio.pause()
-    audio.load()
-  }
+
+  setTimeout(() => {
+    const audio = audioRef.value
+    if (audio) {
+      audio.load()
+      if (reproduciendo.value) {
+        audio.play().catch((err) => console.log('Error al reproducir:', err))
+      }
+    }
+  }, 50)
 }
 
 watch(audioRef, (audio) => {

@@ -1,6 +1,6 @@
 <template>
   <div class="filtros-visuales">
-    <h3>🎨 Filtros Visuales</h3>
+    <h3>Filtros Visuales</h3>
     <div class="btns-filtro-visual">
       <button
         v-for="filtro in filtros"
@@ -21,11 +21,11 @@ defineProps({
 defineEmits(['cambiar'])
 
 const filtros = [
-  { valor: 'ninguno', label: '🖼️ Original' },
-  { valor: 'grayscale', label: '⚫ Escala de grises' },
-  { valor: 'sepia', label: '🟤 Sepia' },
-  { valor: 'contraste', label: '⚡ Contraste' },
-  { valor: 'saturacion', label: '🌈 Saturación' },
+  { valor: 'ninguno', label: ' Original' },
+  { valor: 'grayscale', label: ' Escala de grises' },
+  { valor: 'sepia', label: ' Sepia' },
+  { valor: 'contraste', label: ' Contraste' },
+  { valor: 'saturacion', label: ' Saturación' },
 ]
 </script>
 
